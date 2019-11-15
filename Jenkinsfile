@@ -9,7 +9,7 @@ pipeline {
     	stage('Second'){
         	steps {
             	   when {
-                	echo ${berejob},
+                	environment name: 'berejob',
 			value:'True'
             }
         	}
