@@ -9,7 +9,7 @@ pipeline {
     	stage('Second'){
         	steps {
             	   when {
-                	env.VARIABLE='stage('Second') ',
+                	echo ${VARIABLE}:'VARIABLE ',
 			value:'True'
             }
         	}
