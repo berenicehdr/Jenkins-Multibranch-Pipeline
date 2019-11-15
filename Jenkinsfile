@@ -3,20 +3,15 @@ pipeline {
 	stages {
     	stage('First') {
         	steps {
-            	sh 'env.VARIABLE="True"'
+            	sh 'env.berejob="True"'
         	}
     	}
     	stage('Second'){
         	steps {
             	   when {
-                	echo ${VARIABLE}:'VARIABLE ',
+                	echo ${berejob}:'berejob ',
 			value:'True'
             }
-        	}
-    	}
-    	stage('Thrid') {
-        	steps {
-            	sh 'echo "Updating Second Stage"'
         	}
     	}
 	}
