@@ -9,7 +9,7 @@ pipeline {
     	stage('Second'){
         	steps {
             	   when {
-                	echo ${berejob}:'berejob ',
+                	echo ${berejob},
 			value:'True'
             }
         	}
