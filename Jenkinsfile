@@ -8,7 +8,7 @@ pipeline {
     	}
     	stage('Second'){
         	steps{
-		 sh 'echo ""Updating Second Stage"'
+		 sh 'echo "Updating Second Stage"'
         	}
 
                  when {
