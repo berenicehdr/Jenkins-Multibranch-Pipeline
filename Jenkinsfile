@@ -8,8 +8,7 @@ pipeline {
     	}
     	stage('Two'){
         	steps {
-            	sh 'make check'
-            	junit 'echo "Step Two"'
+            	sh 'echo "Step Two"'
         	}
     	}
     	stage('Three') {
