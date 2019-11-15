@@ -3,7 +3,7 @@ pipeline {
 	stages {
     	stage('First') {
         	steps {
-            	echo  env.berejob="False"
+            	echo  env.berejob="True"
         	}
     	}
     	stage('Second'){
