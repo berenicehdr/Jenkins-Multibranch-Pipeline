@@ -16,5 +16,17 @@ pipeline {
                         value:'True'
             }
     	}
+	 stage('Three') {
+            steps {
+                sh 'echo "Step Three"'
+            }
+		when {
+                        environment name: 'berejob',
+                        value:'False'
+            }
+        }
+
+
+
 	}
 }
